@@ -1,0 +1,29 @@
+<head>
+  <title>StackOverlow</title>
+</head>
+
+<body>
+  <div>{{> hello}}</div>
+  <div>{{> new_user}}</div>
+  <div>{{>ask_question}}</div>
+</body>
+
+<template name="hello">
+  <h1>{{greeting}}</h1>
+</template>
+
+<template name="new_user">
+  <div class="new_user">
+    <p>Enter a username and click submit:    
+      <input id="new_user_name" type="text" />
+      <input type="button" class="add" value="Submit" />
+    </p>
+  </div>
+</template>
+<template name="ask_question">
+  <div class="ask_question">
+    <p>Ask a question: 
+    <input type="text" id="new_question" />
+    <input type="button" id="submit_question" value="Submit" />
+  </div>
+</template>

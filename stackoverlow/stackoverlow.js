@@ -5,11 +5,17 @@ if (Meteor.isClient) {
     return "Welcome to Stackoverlow.";
   };
 
-   Template.new_user.events({
+  Template.new_user.events({
     'click input.add' : function () {
       var new_user_name = document.getElementById("new_user_name").value;
-      Users.insert({name: new_user_name});
+      //Users.insert({name: new_user_name});
       Session.set("new_user_name", new_user_name);
+    }
+  });
+  Template.ask_question.events({
+    'click input.submit' : function () {
+      var new_question = document.getElementById("new_question").value;
+      Session.set("new_question", new_question);
     }
   });
 }

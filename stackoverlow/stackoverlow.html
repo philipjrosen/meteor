@@ -14,16 +14,20 @@
 
 <template name="new_user">
   <div class="new_user">
-    <p>Enter a username and click submit:    
+    <p>Enter a username and click submit:</p>    
       <input id="new_user_name" type="text" />
       <input type="button" class="add" value="Submit" />
-    </p>
+    
   </div>
 </template>
 <template name="ask_question">
+  <form>
   <div class="ask_question">
-    <p>Ask a question: 
-    <input type="text" id="new_question" />
-    <input type="button" id="submit_question" value="Submit" />
+    <p>Ask a question: </p>
+      <textarea id="new_question" cols="20" rows="5">Enter your question here...
+      </textarea>
+      <br />
+      <input type="button" class="submit" value="Submit Question" />
+  </form>
   </div>
 </template>
